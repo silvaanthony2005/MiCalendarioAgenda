@@ -306,13 +306,14 @@ export default function HomeScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    padding: 16,
+    paddingTop: 20,
   },
   calendarContainer: {
     marginBottom: 20,
     overflow: 'hidden',
   },
   calendar: {
+    marginTop: 20,
     borderRadius: 10,
     overflow: 'hidden',
   },
@@ -357,7 +358,7 @@ const styles = StyleSheet.create({
   },
   addButton: {
     position: 'absolute',
-    bottom: 20,
+    bottom: 80,
     right: 20,
     width: 60,
     height: 60,
@@ -365,6 +366,10 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     elevation: 5,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.3,
+    shadowRadius: 3,
   },
   modalContainer: {
     flex: 1,
